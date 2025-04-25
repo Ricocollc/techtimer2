@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Hometown Hero Appliance Repair Timer&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #f8f9fa;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>img {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 250px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom: 1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>h1 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #1b2a57;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-bottom: 1.5rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 1.8rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#timerDisplay {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 2.5rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 1.5rem 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>button {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 1rem 2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 1.1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 0.5rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #1b2a57;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: background-color 0.3s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>button:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #2743a6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>#actionButtons {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 2rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.red-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #d32f2f;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.red-btn:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #b71c1c;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.bottom-section {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 3rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.email-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #00695c;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.email-btn:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-color: #004d40;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- Logo --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;img src="HHPC-Digital-trans (1).webp" alt="Hometown Hero Logo"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- Title --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Hometown Hero Appliance Repair Timer&lt;/h1&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- Timer Button --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button id="startBtn"&gt;Start Timer&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="timerDisplay"&gt;00:00&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- Call/Help Buttons --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div id="actionButtons"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button class="red-btn" onclick="window.location.href='tel:4023990202'"&gt;📞 Call Office&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button onclick="window.open('https://sites.google.com/nhaparts.com/help-center?pli=1', '_blank')"&gt;📚 Visit Help Center&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- Submit and Help Buttons --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="bottom-section"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Done or need help?&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="mailto:darrin@nhaparts.com?subject=Tech%20Report&amp;body=Timer%20exceeded%2045%20minutes%20in%20home.%20Please%20review." target="_blank"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button class="email-btn"&gt;📩 Submit Report&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="mailto:darrin@nhaparts.com?subject=please%20help%20me" target="_blank"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button class="red-btn"&gt;❓ Need Help?&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let timer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let seconds = 0;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const startBtn = document.getElementById('startBtn');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const timerDisplay = document.getElementById('timerDisplay');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const actionButtons = document.getElementById('actionButtons');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function updateTimer() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>seconds++;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const mins = Math.floor(seconds / 60);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const secs = seconds % 60;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>timerDisplay.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (seconds === 2700) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>showOptions();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function showOptions() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>actionButtons.style.display = 'block';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>beep();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>alert("You've hit 45 minutes in the home. Please call the office or visit the help center.");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function beep() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const audioCtx = new (window.AudioContext || window.webkitAudioContext)();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const oscillator = audioCtx.createOscillator();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const gainNode = audioCtx.createGain();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>oscillator.type = 'square';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>oscillator.frequency.setValueAtTime(1000, audioCtx.currentTime);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gainNode.gain.setValueAtTime(0.2, audioCtx.currentTime);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>oscillator.connect(gainNode);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>gainNode.connect(audioCtx.destination);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>oscillator.start();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>oscillator.stop(audioCtx.currentTime + 1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>startBtn.addEventListener('click', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>startBtn.disabled = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>timer = setInterval(updateTimer, 1000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
